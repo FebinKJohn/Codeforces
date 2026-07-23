@@ -1,0 +1,21 @@
+import java.util.HashSet;
+import java.util.Scanner;
+ 
+public class Main{
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        
+        int k=sc.nextInt();
+        int n=sc.nextInt();
+        int w=sc.nextInt();
+        
+        int sum = (w*(w+1))/2*k;
+        if(sum>n){
+           System.out.println(sum-n);
+        }else{
+            System.out.println(0);
+        }
+        
+        sc.close();
+    }
+}
